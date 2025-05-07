@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Stats Dashboard</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <button onclick="loadSVG('basic?style=raw', this)">Basic Stats</button>
+        <button onclick="loadSVG('streaks?style=raw', this)">Streak Stats</button>
+        <button onclick="loadSVG('languages?style=raw', this)">Top Languages</button>
+        <button onclick="loadSVG('waka_stats?style=raw', this)">Code Pulse</button>
+        <button onclick="loadSVG('dev_pulse?style=raw', this)">Dev Pulse</button>
+        <button onclick="loadSVG('distro?style=raw', this)">Distro Info</button>
+        <button onclick="window.open('https://github.com/YESWANTH-S/Term-Stats', '_blank')">
+            View on GitHub
+        </button>        
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <pre>
+                ████████╗███████╗██████╗ ███╗   ███╗    ███████╗████████╗ █████╗ ████████╗███████╗
+                ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║    ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██╔════╝
+                   ██║   █████╗  ██████╔╝██╔████╔██║    ███████╗   ██║   ███████║   ██║   ███████╗
+                   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║    ╚════██║   ██║   ██╔══██║   ██║   ╚════██║
+                   ██║   ███████╗██║  ██║██║ ╚═╝ ██║    ███████║   ██║   ██║  ██║   ██║   ███████║
+                   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚══════╝
+            </pre>
+        </div>
+        
+        <p class="desc">Visualize your GitHub activity with these stats!</p>
+
+        <div id="svgContainer" class="svg-container">
+            <object id="svgObject" type="image/svg+xml" data="">
+                <div class="error-message">
+                    <pre>                  
+
+                        ██╗  ██╗ ██████╗ ██╗  ██╗
+                        ██║  ██║██╔═████╗██║  ██║
+                        ███████║██║██╔██║███████║
+                        ╚════██║████╔╝██║╚════██║
+                             ██║╚██████╔╝     ██║
+                             ╚═╝ ╚═════╝      ╚═╝
+                             
+                   Failed to load SVG ( server error )
+
+                    </pre>
+                </div>
+            </object>
+        </div>
+        
+        <div id="optionsContainer">
+            <div id="usernameWarning" class="username-warning">
+                [!] Please enter a GitHub username.
+            </div>
+            <div id="distroWarning" class="username-warning" style="display:none;">
+                [!] Please complete all Distro Info fields.
+            </div>
+            <div id="devPulseWarning" class="username-warning" style="display:none;">
+                [!] Please fill in all Dev Pulse fields.
+            </div>            
+
+            <div class="option-group">
+                <label>
+                    GitHub Username:<br />
+                    <input type="text" id="usernameInput" placeholder="Enter GitHub username" class="input-field" />
+                </label>
+            </div>
+
+            <div class="option-group">
+                <label>
+                    Title Color:
+                    <span class="dot" id="titleColorDot"></span>
+                </label>
+            
+            <label>
+                Text Color:
+                <span class="dot" id="textColorDot"></span>
+            </label>
+            
+            <label>
+                Value Color:
+                <span class="dot" id="valueColorDot"></span>
+            </label>
+            
+            <label>
+                Border Color:
+                <span class="dot" id="borderColorDot"></span>
+            </label>
+            
+            <label>
+                Background Color:
+                <span class="dot" id="backgroundColorDot"></span>
+            </label>
+            
+            <div id="streakColorGroup" class="option-group" style="display: none;">
+                <label>
+                    Streak Color:
+                    <span class="dot" id="currentStreakColorDot"></span>
+                </label>
+            </div>
+            
+            <div id="quoteColorGroup" class="option-group" style="display: none;">
+                <label>
+                    Quote Color:
+                    <span class="dot" id="quoteColorDot"></span>
+                </label>
+            </div>
+
+                <div id="distroFields" class="option-group" style="display: none;">
+                    <label>
+                        Distro:
+                        <input type="text" id="distroInput" placeholder="Enter Distro" class="input-field" />
+                    </label>
+                    <label>
+                        Shell:
+                        <input type="text" id="shellInput" placeholder="Enter Shell" class="input-field" />
+                    </label>
+                    <label>
+                        Directory:
+                        <input type="text" id="directoryInput" placeholder="Enter Directory" class="input-field" />
+                    </label>
+                </div>
+
+                <div id="devPulseFields" class="option-group" style="display: none;">
+                    <label>
+                        Current Mood:
+                        <input type="text" id="currentMoodInput" placeholder="Enter Current Mood" class="input-field" />
+                    </label>
+                    <label>
+                        Current Focus:
+                        <input type="text" id="currentFocusInput" placeholder="Enter Current Focus" class="input-field" />
+                    </label>
+                    <label>
+                        Favorite Language:
+                        <input type="text" id="favoriteLanguageInput" placeholder="Enter Favorite Language" class="input-field" />
+                    </label>
+                </div>
+            </div>
+
+            <div class="option-group">
+                <label>
+                    Style:
+                    <select id="styleSelect">
+                        <option value="raw">Raw</option>
+                        <option value="normal">Normal</option>
+                        <option value="border">Border</option>
+                    </select>
+                </label>
+
+                <label>
+                    Enable GIF:
+                    <select id="gifSelect" onchange="updateGifOption()">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                        <option value="static">Static</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="option-group">
+                <button onclick="applyCustomization()">Apply</button>
+            </div>
+
+            <div class="option-group" id="urlDisplayGroup" style="display:none;">
+                <input type="text" id="generatedUrl" readonly class="generated-url" />
+                <button onclick="copyUrl(event)" title="Copy URL" class="copy-btn">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr"></script>
+</body>
+
+</html>
