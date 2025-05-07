@@ -1,0 +1,365 @@
+/* Global Body Styling */
+body {
+    background: #1e1e2e;
+    color: #cdd6f4;
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 220px;
+    background: #1a1b26;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-right: 2px solid #7f849c;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.sidebar button {
+    background: none;
+    border: none;
+    color: #cdd6f4;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: relative;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.sidebar button:hover {
+    background: #313244;
+    transform: translateX(5px);
+}
+
+.sidebar button.active {
+    background: #313244;
+}
+
+/* Main Content Styling */
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+
+/* Header Styling (ASCII Art) */
+.header {
+    font-size: 8px;
+    padding: 0px 60px 0px 0px;
+    background-image: linear-gradient(to right, #a2b0ff, #7287fd);
+    background-clip: text;
+    color: transparent;
+}
+
+/* SVG Container Styling */
+.svg-container {
+    width: 600px;
+    height: 200px;
+    background: #181825;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #cdd6f4;
+    overflow: hidden;
+    transition: width 0.3s, height 0.3s;
+}
+
+.svg-container::-webkit-scrollbar {
+    display: none;
+}
+
+.error-message {
+    background-image: linear-gradient(to right, #a2b0ff, #7287fd);
+    background-clip: text;
+    color: transparent;
+    font-size: 15px;
+    text-align: center;
+    padding: 0px 200px 0px 0px;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+object {
+    width: 100%;
+    height: 100%;
+}
+
+/* Redesigned Options Container */
+#optionsContainer {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    background: transparent;
+    border-radius: 12px;
+    padding: 10px 15px;
+    align-items: flex-start;
+}
+
+/* Grouping labels and their color inputs */
+.option-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+/* Label Styling */
+#optionsContainer label {
+    font-size: 13px;
+    color: #cdd6f4;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/* Dot for Color Representation */
+.dot {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+
+/* Input and Select Box Styling */
+#optionsContainer select {
+    padding: 4px 6px;
+    background: #1a1b26;
+    color: #cdd6f4;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+#optionsContainer select:focus {
+    box-shadow: 0 0 5px 2px #7287fd;
+}
+
+/* Button Styling */
+#optionsContainer button {
+    padding: 8px 14px;
+    background: #4c6ef5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    min-width: 100px;
+}
+
+#optionsContainer button:hover {
+    background: #6787f4;
+    transform: translateY(-2px);
+}
+
+#optionsContainer button:active {
+    background: #3c5ed5;
+    transform: translateY(0);
+}
+
+/* New URL Display Styles */
+#urlDisplayGroup {
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+#generatedUrl {
+    flex: 1;
+    padding: 6px 10px;
+    background: #1a1b26;
+    color: #cdd6f4;
+    border: 1px solid #7f849c;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Fira Code', monospace;
+    word-wrap: break-word;
+}
+
+#generatedUrl:focus {
+    box-shadow: 0 0 5px 2px #7287fd;
+}
+
+button[title="Copy URL"] {
+    background: #4c6ef5;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[title="Copy URL"]:hover {
+    background: #6787f4;
+    transform: translateY(-2px);
+}
+
+button[title="Copy URL"]:active {
+    background: #3c5ed5;
+    transform: translateY(0);
+}
+
+
+#backgroundColorDot {
+    border: 1px solid #ffffff;
+}
+
+/* Input Fields */
+#usernameInput,
+#distroInput,
+#shellInput,
+#directoryInput,
+#currentMoodInput,
+#currentFocusInput,
+#favoriteLanguageInput {
+    padding: 4px 6px;
+    background: #1a1b26;
+    color: #cdd6f4;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+/* Hidden Fields and Groups */
+#streakColorGroup,
+#quoteColorGroup,
+#distroFields,
+#devPulseFields {
+    display: none;
+}
+
+.link-button {
+    background-color: #414868;
+    color: #cdd6f4;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #6272a4;
+}
+
+#usernameWarning,
+#devPulseWarning,
+#distroWarning {
+    display: none;
+    color: #fab387;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -8px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        border-right: none;
+        border-bottom: 2px solid #7f849c;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .sidebar button {
+        font-size: 14px;
+        padding: 8px 10px;
+        white-space: nowrap;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .svg-container {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .header {
+        font-size: 5px;
+        padding: 0px 30px 0px 0px;
+        text-align: center;
+        word-break: break-word;
+    }
+
+    .desc{
+        font-size: 10px;
+    }
+    #optionsContainer {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .option-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #optionsContainer select,
+    #optionsContainer input {
+        width: 100%;
+    }
+
+    .generated-url {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 870px) and (min-width: 768px) {
+    .main {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .svg-container {
+        width: 100%;
+        max-width: 500px;
+    }
+}
