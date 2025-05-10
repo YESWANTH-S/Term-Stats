@@ -8,7 +8,7 @@
   {% endif %}
 
   {% if gif_mode in ["true", "static"] %}
-    <image href="{{ pulse_base64_gif }}" x="225" y="10" width="150" height="150" opacity="0" pointer-events="none">
+    <image href="{{ pulse_base64_gif|e }}" x="225" y="10" width="150" height="150" opacity="0" pointer-events="none">
       <animate attributeName="opacity" to="1" begin="3s" dur="1s" fill="freeze" />
     </image>
   {% endif %}
@@ -30,11 +30,11 @@
   </text>
 
   <g class="stats-group" opacity="0" transform="translate(0,10)">
-    <text x="10" y="55" class="stat-text">&gt; Mood: <tspan class="stat-value">{{ current_mood }}</tspan></text>
-    <text x="10" y="85" class="stat-text">&gt; Focus: <tspan class="stat-value">{{ current_focus }}</tspan></text>
-    <text x="10" y="115" class="stat-text">&gt; Fav Language: <tspan class="stat-value">{{ favorite_language }}</tspan></text>
-    <text x="10" y="145" class="stat-text">&gt; Streak: <tspan class="stat-value">{{ coding_streak }}</tspan></text>
-    <text x="10" y="175" class="stat-text">&gt; Quote: <tspan class="quote">{{ terminal_quote }}</tspan></text>
+    <text x="10" y="55" class="stat-text">&gt; Mood: <tspan class="stat-value">{{ current_mood|e }}</tspan></text>
+    <text x="10" y="85" class="stat-text">&gt; Focus: <tspan class="stat-value">{{ current_focus|e }}</tspan></text>
+    <text x="10" y="115" class="stat-text">&gt; Fav Language: <tspan class="stat-value">{{ favorite_language|e }}</tspan></text>
+    <text x="10" y="145" class="stat-text">&gt; Streak: <tspan class="stat-value">{{ coding_streak|e }}</tspan></text>
+    <text x="10" y="175" class="stat-text">&gt; Quote: <tspan class="quote">{{ terminal_quote|e }}</tspan></text>
 
     <animate attributeName="opacity" from="0" to="1" begin="2.5s" dur="0.5s" fill="freeze" />
     <animateTransform attributeName="transform" type="translate" from="0,10" to="0,0" begin="2.5s" dur="0.5s" fill="freeze" />
@@ -42,7 +42,7 @@
 
   <style type="text/css">
     .OuterBorder, .Border {
-      stroke: #{{ border_color }};
+      stroke: #{{ border_color|e }};
       stroke-width: 3;
       stroke-dasharray: 2800;
       stroke-dashoffset: 2800;
@@ -51,11 +51,11 @@
     }
     @keyframes drawBorder { to { stroke-dashoffset: 0; } }
 
-    .title, .stat-text { fill: #{{ text_color }}; font-family: Fira Code, monospace; }
+    .title, .stat-text { fill: #{{ text_color|e }}; font-family: Fira Code, monospace; }
     .title { font-size: 16px; }
     .stat-text { font-size: 14px; }
 
-    .stat-value { fill: #{{ value_color }}; }
-    .quote { fill: #{{ quote_color }}; font-family: 'Ubuntu Mono', monospace; }
+    .stat-value { fill: #{{ value_color|e }}; }
+    .quote { fill: #{{ quote_color|e }}; font-family: 'Ubuntu Mono', monospace; }
   </style>
 </svg>

@@ -31,14 +31,14 @@
   </text>
 
   {% for lang in languages %}
-    <text class="stat-text" x="10" y="{{ 55 + loop.index0 * 30 }}" style="animation-delay: {{ 2.6 + loop.index0 * 0.2 }}s;">> {{ lang.name }}</text>
-    <text class="stat-value" x="130" y="{{ 55 + loop.index0 * 30 }}" style="animation-delay: {{ 2.6 + loop.index0 * 0.2 }}s;">{{ lang.bar }}</text>
-    <text class="stat-text" x="240" y="{{ 55 + loop.index0 * 30 }}" style="animation-delay: {{ 2.6 + loop.index0 * 0.2 }}s;">{{ lang.percentage }}%</text>
+    <text class="stat-text" x="10" y="{{ 55 + loop.index0 * 30 }}" style="animation-delay: {{ 2.6 + loop.index0 * 0.2 }}s;">&gt; {{ lang.name|e }}</text>
+    <text class="stat-value" x="130" y="{{ 55 + loop.index0 * 30 }}" style="animation-delay: {{ 2.6 + loop.index0 * 0.2 }}s;">{{ lang.bar|e }}</text>
+    <text class="stat-text" x="240" y="{{ 55 + loop.index0 * 30 }}" style="animation-delay: {{ 2.6 + loop.index0 * 0.2 }}s;">{{ lang.percentage|e }}%</text>
   {% endfor %}
 
   <style>
     .OuterBorder, .Border {
-      stroke: #{{ border_color }};
+      stroke: #{{ border_color|e }};
       stroke-width: 2;
       stroke-dasharray: 2800;
       stroke-dashoffset: 2800;
@@ -48,10 +48,10 @@
 
     @keyframes drawBorder { to { stroke-dashoffset: 0; } }
 
-    .title { fill: #{{ title_color }}; font-family: 'Fira Code', monospace; font-size: 16px; }
+    .title { fill: #{{ title_color|e }}; font-family: 'Fira Code', monospace; font-size: 16px; }
 
     .stat-text {
-      fill: #{{ text_color }};
+      fill: #{{ text_color|e }};
       font: 14px 'Fira Code', monospace;
       opacity: 0;
       transform: translateX(-20px);
@@ -59,7 +59,7 @@
     }
 
     .stat-value {
-      fill: #{{ value_color }};
+      fill: #{{ value_color|e }};
       font: 14px 'Segoe UI', Ubuntu, Sans-Serif;
       opacity: 0;
       transform: translateX(-20px);

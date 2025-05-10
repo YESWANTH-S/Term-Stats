@@ -30,18 +30,18 @@
   </text>
 
   <g class="stats-group" opacity="0" transform="translate(0,10)">
-    <text x="10" y="55" class="stat-text">&gt; Total Stars: <tspan class="stat-value">{{ stars }}</tspan></text>
-    <text x="10" y="85" class="stat-text">&gt; Total Commits: <tspan class="stat-value">{{ commits }}</tspan></text>
-    <text x="10" y="115" class="stat-text">&gt; Total PRs: <tspan class="stat-value">{{ prs }}</tspan></text>
-    <text x="10" y="145" class="stat-text">&gt; Total Issues: <tspan class="stat-value">{{ issues }}</tspan></text>
-    <text x="10" y="175" class="stat-text">&gt; Contributed to: <tspan class="stat-value">{{ contributed }}</tspan></text>
+    <text x="10" y="55" class="stat-text">&gt; Total Stars: <tspan class="stat-value">{{ stars|e }}</tspan></text>
+    <text x="10" y="85" class="stat-text">&gt; Total Commits: <tspan class="stat-value">{{ commits|e }}</tspan></text>
+    <text x="10" y="115" class="stat-text">&gt; Total PRs: <tspan class="stat-value">{{ prs|e }}</tspan></text>
+    <text x="10" y="145" class="stat-text">&gt; Total Issues: <tspan class="stat-value">{{ issues|e }}</tspan></text>
+    <text x="10" y="175" class="stat-text">&gt; Contributed to: <tspan class="stat-value">{{ contributed|e }}</tspan></text>
     <animate attributeName="opacity" from="0" to="1" begin="2.5s" dur="0.5s" fill="freeze" />
     <animateTransform attributeName="transform" type="translate" from="0,10" to="0,0" begin="2.5s" dur="0.5s" fill="freeze" />
   </g>
 
   <style type="text/css">
     .OuterBorder, .Border {
-      stroke: #{{ border_color }};
+      stroke: #{{ border_color|e }};
       stroke-width: 3;
       stroke-dasharray: 2800;
       stroke-dashoffset: 2800;
@@ -50,8 +50,8 @@
     }
     @keyframes drawBorder { to { stroke-dashoffset: 0; } }
 
-    .title { fill: #{{ title_color }}; font-family: Fira Code, monospace; font-size: 16px; }
-    .stat-text { fill: #{{ text_color }}; font-family: Fira Code, monospace; font-size: 14px; }
-    .stat-value { fill: #{{ value_color }}; }
+    .title { fill: #{{ title_color|e }}; font-family: Fira Code, monospace; font-size: 16px; }
+    .stat-text { fill: #{{ text_color|e }}; font-family: Fira Code, monospace; font-size: 14px; }
+    .stat-value { fill: #{{ value_color|e }}; }
   </style>
 </svg>

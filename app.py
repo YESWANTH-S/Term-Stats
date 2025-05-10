@@ -8,7 +8,6 @@ ALLOWED_STYLES = {"normal", "border", "raw"}
 ALLOWED_GIF_MODES = {"true", "false", "static"}
 USERNAME = os.getenv("GH_USERNAME")
 
-# Initialize Flask App
 app = Flask(__name__)
 
 # Helper Functions

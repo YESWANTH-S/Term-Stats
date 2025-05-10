@@ -72,6 +72,24 @@ function initializePickrs() {
     ].forEach(createPickr);
 }
 
+function sanitizeInput(str) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#x27;',
+        "/": '&#x2F;',
+    };
+    const reg = /[&<>"'/]/ig;
+    return str.replace(reg, (match) => (map[match]));
+}
+
+function isValidSimpleText(input) {
+    const regex = /^[\w\s\-.,\p{Emoji}]{1,50}$/u;
+    return regex.test(input);
+}
+
 // Apply customization and generate URL
 function applyCustomization() {
     const svg = document.getElementById('svgObject');
@@ -110,23 +128,27 @@ function applyCustomization() {
     }
     
 if (document.getElementById("distroFields").style.display !== "none") {
-    const distro = document.getElementById("distroInput").value.trim();
-    const shell = document.getElementById("shellInput").value.trim();
-    const directory = document.getElementById("directoryInput").value.trim();
-    if (!distro || !shell || !directory) {
+    const distro = sanitizeInput(document.getElementById("distroInput").value.trim());
+    const shell = sanitizeInput(document.getElementById("shellInput").value.trim());
+    const directory = sanitizeInput(document.getElementById("directoryInput").value.trim());
+
+    if (!distro || !shell || !directory || !isValidSimpleText(distro) || !isValidSimpleText(shell) || !isValidSimpleText(directory)) {
         showSectionWarning("distroWarning");
         return;
     }
+
 }
 
 if (document.getElementById("devPulseFields").style.display !== "none") {
-    const mood = document.getElementById("currentMoodInput").value.trim();
-    const focus = document.getElementById("currentFocusInput").value.trim();
-    const lang = document.getElementById("favoriteLanguageInput").value.trim();
-    if (!mood || !focus || !lang) {
+    const mood = sanitizeInput(document.getElementById("currentMoodInput").value.trim());
+    const focus = sanitizeInput(document.getElementById("currentFocusInput").value.trim());
+    const lang = sanitizeInput(document.getElementById("favoriteLanguageInput").value.trim());
+
+    if (!mood || !focus || !lang || !isValidSimpleText(mood) || !isValidSimpleText(focus) || !isValidSimpleText(lang)) {
         showSectionWarning("devPulseWarning");
         return;
     }
+
 }
 
     const style = document.getElementById("styleSelect").value;
@@ -149,13 +171,13 @@ if (document.getElementById("devPulseFields").style.display !== "none") {
 
     if (statType === "streaks") {
         const currentStreakColor = pickrs['currentStreakColor'].getColor().toHEXA().toString().substring(1);
-        url += `&currentStreakColor=${currentStreakColor}`;
+        url += `&currentStreakColor=${encodeURIComponent(currentStreakColor)}`;
         localStorage.setItem('currentStreakColor', `#${currentStreakColor}`);
     }
 
     if (statType === "dev_pulse") {
         const quoteColor = pickrs['quoteColor'].getColor().toHEXA().toString().substring(1);
-        url += `&quoteColor=${quoteColor}`;
+        url += `&quoteColor=${encodeURIComponent(quoteColor)}`;
         localStorage.setItem('quoteColor', `#${quoteColor}`);
 
         const currentMood = document.getElementById("currentMoodInput").value.trim();
