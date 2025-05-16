@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://term-stats.onrender.com/" target="_blank">
+  <a href="https://term-stat.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/Visit%20Website-Term%20Stats-b4befe?style=for-the-badge">
   </a>
 </p>
@@ -102,20 +102,20 @@
   <tr>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/basic?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746798594076" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/basic?style=raw" alt="Basic Stats" width="400" />
+        <source srcset="https://term-stat.onrender.com/basic?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746798594076" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/basic?style=raw" alt="Basic Stats" width="400" />
       </picture>
     </td>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746798678046&currentStreakColor=B5A0F4" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/streaks?style=raw" alt="Streak Stats" width="400" />
+        <source srcset="https://term-stat.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746798678046&currentStreakColor=B5A0F4" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/streaks?style=raw" alt="Streak Stats" width="400" />
       </picture>
     </td>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/languages?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746798699595" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/languages?style=raw" alt="Top Languages" width="400" />
+        <source srcset="https://term-stat.onrender.com/languages?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746798699595" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/languages?style=raw" alt="Top Languages" width="400" />
       </picture>
     </td>
   </tr>
@@ -130,20 +130,20 @@
   <tr>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/waka_stats?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746798699595" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/waka_stats?style=raw" alt="WakaTime Stats" width="400" />
+        <source srcset="https://term-stat.onrender.com/waka_stats?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746798699595" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/waka_stats?style=raw" alt="WakaTime Stats" width="400" />
       </picture>
     </td>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/dev_pulse?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746802068449&quoteColor=40A02B" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/dev_pulse?style=raw" alt="Dev Pulse" width="400" />
+        <source srcset="https://term-stat.onrender.com/dev_pulse?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746802068449&quoteColor=40A02B" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/dev_pulse?style=raw" alt="Dev Pulse" width="400" />
       </picture>
     </td>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/distro?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746802108830" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/distro?style=raw" alt="Distro Info" width="400" />
+        <source srcset="https://term-stat.onrender.com/distro?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=000000F2&gif=true&t=1746802108830" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/distro?style=raw" alt="Distro Info" width="400" />
       </picture>
     </td>
   </tr>
@@ -160,20 +160,20 @@
   <tr>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/basic?username=YESWANTH-S&style=border&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=true&t=1746802247066" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/basic?style=border" alt="Border Style" width="400" />
+        <source srcset="https://term-stat.onrender.com/basic?username=YESWANTH-S&style=border&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=true&t=1746802247066" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/basic?style=border" alt="Border Style" width="400" />
       </picture>
     </td>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/basic?username=YESWANTH-S&style=normal&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=true&t=1746802264897" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/basic?style=normal" alt="Table Style" width="400" />
+        <source srcset="https://term-stat.onrender.com/basic?username=YESWANTH-S&style=normal&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=true&t=1746802264897" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/basic?style=normal" alt="Table Style" width="400" />
       </picture>
     </td>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/basic?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=true&t=1746802275437" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/basic?style=raw" alt="Transparent Style" width="400" />
+        <source srcset="https://term-stat.onrender.com/basic?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=true&t=1746802275437" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/basic?style=raw" alt="Transparent Style" width="400" />
       </picture>
     </td>
   </tr>
@@ -189,20 +189,20 @@
   <tr>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=true&t=1746802338550&currentStreakColor=B5A0F4" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/streaks?style=raw" alt="Streaks with GIF" width="400" />
+        <source srcset="https://term-stat.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=true&t=1746802338550&currentStreakColor=B5A0F4" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/streaks?style=raw" alt="Streaks with GIF" width="400" />
       </picture>
     </td>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=static&t=1746802362759&currentStreakColor=B5A0F4" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/streaks?style=raw&gif=static" alt="Streaks Static" width="400" />
+        <source srcset="https://term-stat.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=static&t=1746802362759&currentStreakColor=B5A0F4" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/streaks?style=raw&gif=static" alt="Streaks Static" width="400" />
       </picture>
     </td>
     <td>
       <picture>
-        <source srcset="https://term-stats.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=false&t=1746802377916&currentStreakColor=B5A0F4" media="(prefers-color-scheme: light)">
-        <img src="https://term-stats.onrender.com/streaks?style=raw&gif=false" alt="Streaks No GIF" width="400" />
+        <source srcset="https://term-stat.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=4C4F69&textColor=4C4F69&valueColor=7287FD&borderColor=4C4F69&backgroundColor=00000000&gif=false&t=1746802377916&currentStreakColor=B5A0F4" media="(prefers-color-scheme: light)">
+        <img src="https://term-stat.onrender.com/streaks?style=raw&gif=false" alt="Streaks No GIF" width="400" />
       </picture>
     </td>
   </tr>
@@ -331,7 +331,7 @@ Built with:
    
    Example:
    ```text
-   https://term-stats.onrender.com/basic?username=YESWANTH-S&style=raw&titleColor=FFFFFF&textColor=CDD6F4&valueColor=B4BEFE&borderColor=CDD6F4&gif=false
+   https://term-stat.onrender.com/basic?username=YESWANTH-S&style=raw&titleColor=FFFFFF&textColor=CDD6F4&valueColor=B4BEFE&borderColor=CDD6F4&gif=false
    ```
 
 2. **Streaks**  
@@ -339,7 +339,7 @@ Built with:
    
    Example:
    ```text
-   https://term-stats.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=FFFFFF&textColor=CDD6F4&valueColor=B4BEFE&borderColor=CDD6F4&gif=false&currentStreakColor=B5A0F4
+   https://term-stat.onrender.com/streaks?username=YESWANTH-S&style=raw&titleColor=FFFFFF&textColor=CDD6F4&valueColor=B4BEFE&borderColor=CDD6F4&gif=false&currentStreakColor=B5A0F4
    ```
 
 3. **Developer Pulse**  
@@ -347,7 +347,7 @@ Built with:
 
    Example:
    ```text
-   https://term-stats.onrender.com/dev_pulse?username=YESWANTH-S&style=raw&titleColor=FFFFFF&textColor=CDD6F4&valueColor=B4BEFE&borderColor=CDD6F4&gif=false&quoteColor=94E2D5&currentMood=Chill&currentFocus=Term%20Stats&favoriteLanguage=Python
+   https://term-stat.onrender.com/dev_pulse?username=YESWANTH-S&style=raw&titleColor=FFFFFF&textColor=CDD6F4&valueColor=B4BEFE&borderColor=CDD6F4&gif=false&quoteColor=94E2D5&currentMood=Chill&currentFocus=Term%20Stats&favoriteLanguage=Python
    ```
 
 4. **Distro Info**  
@@ -355,7 +355,7 @@ Built with:
 
    Example:
    ```text
-   https://term-stats.onrender.com/distro?username=YESWANTH-S&style=raw&titleColor=FFFFFF&textColor=CDD6F4&valueColor=B4BEFE&borderColor=CDD6F4&gif=false&distro=EndeavourOS&shell=zsh&directory=projects
+   https://term-stat.onrender.com/distro?username=YESWANTH-S&style=raw&titleColor=FFFFFF&textColor=CDD6F4&valueColor=B4BEFE&borderColor=CDD6F4&gif=false&distro=EndeavourOS&shell=zsh&directory=projects
    ```
 
 
